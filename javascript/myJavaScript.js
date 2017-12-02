@@ -1,5 +1,5 @@
 //validation for log-in form
-function validateLogInForm() {
+/*function validateLogInForm() {
     //check for empty "text" input field
     var inp = document.getElementsByTagName('input');
     for(var i in inp){
@@ -12,7 +12,7 @@ function validateLogInForm() {
             }
         }
     }
-    
+    */
   /*  //check email if they have @ or .
     var emailFormat = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     var email = document.forms["logInForm"]["email"].value;
