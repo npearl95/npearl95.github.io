@@ -10,14 +10,19 @@ border-box: make all the item the size width*/
     box-sizing: border-box;
 }
 
-/*Start from here is the media section*/
-body{
-    background-color: rgb(255, 255, 255);
+
+.body{
+    /*background-image: url("images/bg.jpg");*/
+    background-color: rgb(102, 46, 46);
     position: relative;
 }
+
+
 #footer{
-    border-top: 2px solid rgb(52, 59, 66);
-    color: rgb(52, 59, 66);
+    background-color: #1D2731;
+    color: rgb(221, 220, 215);
+    min-height: 30px;
+    border: none;
     bottom:0;
     position: absolute;
 }
@@ -167,15 +172,6 @@ input[type=text]:focus{
         min-height: 30px;
         border: none;
     }
-
-    #footer{
-        background-color: #1D2731;
-        color: rgb(221, 220, 215);
-        min-height: 30px;
-        border: none;
-        bottom:0;
-        position: absolute;
-    }
     
     .menu {
         background-color: #1D2731;
@@ -183,18 +179,9 @@ input[type=text]:focus{
     }
 
 }
-.crop {
-    overflow: hidden;
-}
-
-.crop img {
-    width: auto;
-    height: 25%;
-}
-  
 .box li {
-    padding: 10px;
-    margin-bottom: 15px;
+    padding: 10px 0px 10px 0px;
+    margin: 5px 3em 5px 0px;
     background-color:  #1D2731;
     color: #ffffff;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
