@@ -146,14 +146,14 @@ input[type=text]:focus{
         padding: 10px;
     }
 
-        .menu-content a:hover {
+        .menu-content a:hover a:active{
             background-color: rgb(52, 59, 66);
             color:rgb(255, 255, 255);
-            -webkit-transform: rotate(5deg);
+            /*-webkit-transform: rotate(5deg);
             -moz-transform: rotate(5deg);
               -o-transform: rotate(5deg);
              -ms-transform: rotate(5deg);
-             transform: rotate(5deg);
+             transform: rotate(5deg);*/
         }
 
 .menu:hover .menu-content {
