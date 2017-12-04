@@ -18,20 +18,12 @@ to prevent other item goes on top of the column*/
 }
 
 .body{
-    /*background-image: url("images/bg.jpg");*/
-    background-color: rgb(102, 46, 46);
     position: relative;
 }
-
 
 .footer{
     background-color: #1D2731;
     color: rgb(221, 220, 215);
-    position: absolute;
-    right:0;
-    bottom: 0;
-    left: 0;
-    padding: 1rem;
 }
 /*This will divide my page into 12 collumn*/
 /*Mobile first*/
@@ -181,4 +173,26 @@ input[type=text]:focus{
       -o-transform: rotate(5deg);
      -ms-transform: rotate(5deg);
      transform: rotate(5deg);
+}
+.grid-container{
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-columns: auto auto auto auto;
+    background-color: rgb(52, 59, 66);
+    padding: 5px;
+}
+.grid-container>div{
+    background-color: white;
+    border: 1px solid;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+.item1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.item2{
+    grid-column-start: 3;
+    grid-column-end: 6;
 }
