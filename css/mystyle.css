@@ -9,7 +9,13 @@ border-box: make all the item the size width*/
 * {
     box-sizing: border-box;
 }
-
+/*Add a style that clears the flow of the column
+to prevent other item goes on top of the column*/
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
 
 .body{
     /*background-image: url("images/bg.jpg");*/
@@ -18,13 +24,14 @@ border-box: make all the item the size width*/
 }
 
 
-#footer{
+.footer{
     background-color: #1D2731;
     color: rgb(221, 220, 215);
-    min-height: 30px;
-    border: none;
-    bottom:0;
     position: absolute;
+    right:0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
 }
 /*This will divide my page into 12 collumn*/
 /*Mobile first*/
@@ -56,13 +63,7 @@ width: 100%;
 /*End 12 collumn*/
 
 
-/*Add a style that clears the flow of the column
-to prevent other item goes on top of the column*/
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
+
 
 .header{
     background-color: #1D2731;
@@ -114,19 +115,6 @@ input[type=text],select {
 input[type=text]:focus{
     background-color: rgb(206, 192, 176);
 }
-
-.holder{
-    background-color:#D69764;
-}
-.holder1{
-    background-color: #E63022;
-}
-.holder2{
-    background-color:#BDBAAA;
-}
-
-/*test*/
-
 .menu {
     position: relative;
     display: inline-block;
@@ -177,7 +165,6 @@ input[type=text]:focus{
         background-color: #1D2731;
         color:white;
     }
-
 }
 .box li {
     padding: 10px 0px 10px 0px;
