@@ -170,14 +170,14 @@ input[type=text]:focus{
 }
 .grid-container{
     display: grid;
-    grid-column-gap: 2px;
+    /*grid-column-gap: 5px;*/
     grid-template-columns: auto auto;
-    background-color: rgb(52, 59, 66);
-    padding: 5px;
+    /*background-color: rgb(52, 59, 66);*/
+    /*padding: 5px;*/
 }
 .grid-container>div{
-    background-color: white;
-    border: 1px solid;
+    /*background-color: white;
+    border: 1px solid;*/
     padding: 5px;
     font-size: 20px;
     text-align: center;
@@ -190,8 +190,12 @@ input[type=text]:focus{
     grid-column-start: 3;
     grid-column-end: 6;
 }
-img {
+.profile-pic {
     height: 100px;
     width: 100px;
     border-radius: 100%;
-    }
+}
+img{
+    height: auto;
+    width: 100%;
+}
