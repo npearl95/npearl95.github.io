@@ -89,6 +89,24 @@ input[type="submit"] {
 button:hover{
     background-color: rgb(39, 49, 59);
 }
+input[type=email]{
+    border: 1px solid black;
+    border-radius: 12px;
+    font: 14px bold;
+    padding: 10px 20px;
+    text-align: center;
+    margin: 0 auto;
+    width: 150px;
+}
+input[type=password]{
+    border: 1px solid black;
+    border-radius: 12px;
+    font: 14px bold;
+    padding: 10px 20px;
+    text-align: center;
+    margin: 0 auto;
+    width: 150px;
+}
 input[type=text],select {
     background-color: rgb(226, 226, 226);
     font: 14px bold;
