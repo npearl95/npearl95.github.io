@@ -159,6 +159,11 @@ input[type=text]:focus{
     color: #ffffff;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
+.box li a{
+    color: white;/*prevent href link to be blue*/
+    text-decoration: none;/*prevent href link to be underline*/
+    display: block; /*Displays an element as a block element (like <p>)*/
+}
 .box li:hover {
     background-color: rgb(52, 59, 66);
     color:rgb(255, 255, 255);
@@ -176,8 +181,7 @@ input[type=text]:focus{
     /*padding: 5px;*/
 }
 .grid-container>div{
-    /*background-color: white;
-    border: 1px solid;*/
+    /*background-color: white;*/
     padding: 5px;
     font-size: 20px;
     text-align: center;
@@ -186,10 +190,11 @@ input[type=text]:focus{
     grid-column-start: 1;
     grid-column-end: 3;
 }
-.item2{
+/*.item2{
     grid-column-start: 3;
     grid-column-end: 6;
-}
+}*/
+
 .profile-pic {
     height: 100px;
     width: 100px;
@@ -198,4 +203,9 @@ input[type=text]:focus{
 img{
     height: auto;
     width: 100%;
+}
+.section-header{
+    background-color: #1D2731;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    color: rgb(221, 220, 215);
 }
