@@ -68,7 +68,7 @@ width: 100%;
 .header a{
     color: white;/*prevent href link to be blue*/
     text-decoration: none;/*prevent href link to be underline*/
-    padding: 0px 20px 0px 20px;
+    padding:0.5% 12%;
 }
 /*---------------------------------------------*/
 /*log-in form*/
