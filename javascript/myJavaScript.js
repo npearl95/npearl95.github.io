@@ -22,3 +22,17 @@
     }
 
 }*/
+function validateLogInForm() {
+    //check for empty "text" input field
+    var inp = document.getElementsByTagName('input');
+    for(var i in inp){
+        if(inp[i].type == "email"||inp[i].type == "password"){
+            if(inp[i].value==""){
+                alert(inp[i].placeholder +" is missing.");
+                //inp[i].focus(); //this will erase the field
+                return false;
+                break;
+            }
+        }
+    }
+}
