@@ -26,6 +26,12 @@ to prevent other item goes on top of the column*/
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     color: rgb(221, 220, 215);
 }
+
+.footer a{
+    color: white;/*prevent href link to be blue*/
+    text-decoration: none;/*prevent href link to be underline*/
+    padding: 0.5% 12% 0.5% 12%;
+}
 /*This will divide my page into 12 collumn*/
 /*Mobile first*/
 [class*="col-"] {
@@ -178,11 +184,35 @@ input[type=text]:focus{
         border: none;
     }
 }
-.box li {
+/*side navigation*/
+.navigation li {
     padding: 10px 0px 10px 0px;
     min-width: 100%;
     margin: 15px 0px 15px 0px;
     background-color:  #1D2731;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.navigation li a{
+    color: white;/*prevent href link to be blue*/
+    text-decoration: none;/*prevent href link to be underline*/
+    display: block; /*Displays an element as a block element (like <p>)*/
+}
+.navigation li:hover {
+    background-color: rgb(52, 59, 66);
+    color:rgb(255, 255, 255);
+    -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+      -o-transform: rotate(5deg);
+     -ms-transform: rotate(5deg);
+     transform: rotate(5deg);
+}
+/*down load file*/
+.box li {
+    padding: 10px 0px 10px 0px;
+    min-width: 100%;
+    margin: 15px 0px 15px 0px;
+    background-color:  rgb(60, 76, 92);
     color: #ffffff;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
