@@ -22,24 +22,32 @@
             <div class="col-6 header">
                 <a href="https://github.com/npearl95"><i class="fa fa-github" style="font-size:24px"></i></a>
                 <a href="https://www.instagram.com/sillypearlng/"><i class="fa fa-instagram" style="font-size:24px"></i></a>
-                <a href="https://www.facebook.com/chaunguyen1995"><i class="fa fa-facebook" style="font-size:24px"></i></a>
+                <a href="www.linkedin.com/in/pearl-nguyen"><i class="fa fa-linkedin" style="font-size:24px"></i></a>
             </div>
         </div>
         <div class="row">
                 <div class="col-3 log-in">
-                        <form name="logInForm" method="post" >
+                        <form name="logInForm" onSubmit="return validatePassword()" method="post">
                             <br><input type="email" id="email" placeholder="Email" required></br>
-                            <br><input type="password" id="password" placeholder="Password" required></br>
+                            <br><input type="password" id="password" placeholder="Password" onclick="validatePassword()" required></br>
                             <br><input type="submit" value="Login" ></br>
+                            <br><input type="checkbox" onclick="showPassword()">Show Password</br>
                         </form>
+                        <div id="message">
+                            <h4>Password must contains:</h2>
+                            <br><a id="lowerCase" class="invalid">A lowercase</a></br>
+                            <br><a id="upperCase" class="invalid">A Upper Case</a></br>
+                            <br><a id="number" class="invalid">A Number</a></br>
+                            <br><a id="length" class="invalid">Must have 8 characters</a></br>
+                        </div>
                 </div>   
                 <div class="col-6">
                     <h1>COMPUTER SCIENCE AT TEMPLE</h1>
                         <img class="profile-pic" src="images/profile.png">
                         <p>I'm Pearl. Computer Science Major at Temple University (2016-2019).</p>
-                        <p>I self-taught myself HTML, CSS, JavaScript and PHP to create this website.
-                        <p>This website contains all the materials (labs and tests) from all the courses you have to take to graduate as a B.S in CS at Temple.</p>
-                        <p>I hope these materials will help you to be successful at CS Temple and for your self-development.</p>
+                        <p>I self-learn HTML, CSS, JavaScript and PHP to create this website.
+                        <p>This website contains all the materials from all the courses you have to take to graduate as a B.S in CS at Temple.
+                        I hope these materials will help you to be successful at CS Temple and for your self-development.</p>
                         <p>"You can never buy the knowledge"-Pearl</p>
                 </div>
                 <div class="col-3 navigation">
@@ -60,25 +68,19 @@
             <div class="grid-item"><img src="images/bg1.jpg"></div>
             <div class="item1"><img src="images/1.jpg"></div>
         </div>
-        <div class="grid-container col-6">
+      <!--  <div class="grid-container col-6">
             <div class="item1"><img src="images/1.jpg"></div>
             <div class="grid-item"><img src="images/bg1.jpg"></div>
             <div class="grid-item"><img src="images/bg1.jpg"></div>
-        </div>
+        </div-->
     </div>
-   <!-- <div class="row">
+    <!--div class="row">
         <div class="col-4 box">
             <ul>
-                <li>PEARSONAL PROJECT</li>
-                <li>CIS 2107</li>
-                <li>CIS 2166</li>
-                <li>CIS 3107</li>
-                <li>CIS 3223</li>
-                <li>CIS 2168</li>
-                <li>CIS 2107</li>
-                <li>CIS 2166</li>
-                <li>CIS 3107</li>
-                <li>CIS 3223</li>
+                <li>Item 1</li>
+                <li>Item 1</li>
+                <li>Item 1</li>
+                <li>Item 1</li>
             </ul>     
         </div>
         <div class="col-8">
@@ -95,8 +97,7 @@
                 </div>
             </div>
         </div>
-    </div>
--->
+    </div-->
     <div class="row">
         <div class="col-12 section-header"> <a name="CIS2107">CIS 2107</a></div>
     </div>
@@ -133,12 +134,13 @@
                         <li ><a href="documents/cis2168/Lab1.pdf">Lab 1</a></li>
                     </ul>     
             </div>
+            
     </div>
     <div class="row">
         <div class="col-12 footer">
-                <a href="https://github.com/npearl95"><i class="fa fa-github" style="font-size:24px"></i></a>
-                <a href="https://www.facebook.com/chaunguyen1995"><i class="fa fa-instagram" style="font-size:24px"></i></a>
-                <a href="https://www.instagram.com/sillypearlng/"><i class="fa fa-facebook" style="font-size:24px"></i></a>
+            <a href="https://github.com/npearl95"><i class="fa fa-github" style="font-size:24px"></i></a>
+            <a href="https://www.instagram.com/sillypearlng/"><i class="fa fa-instagram" style="font-size:24px"></i></a>
+            <a href="www.linkedin.com/in/pearl-nguyen"><i class="fa fa-linkedin" style="font-size:24px"></i></a>
             <p>Be creative and Innovatice</p>
         </div>
     </div>
