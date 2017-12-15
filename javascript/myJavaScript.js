@@ -34,7 +34,6 @@ function validatePassword() {
     input.onblur=function(){
         document.getElementById("message").style.display="none";
     }
-
     // When the user starts to type something inside the password field
     input.onkeyup = function() {
     // Validate lowercase letters

@@ -133,8 +133,24 @@
                         <li ><a href="documents/cis2168/CIS2168-syllabus.pdf">Syllabus</li>
                         <li ><a href="documents/cis2168/Lab1.pdf">Lab 1</a></li>
                     </ul>     
-            </div>
-            
+            </div>      
+    </div>
+    <div class="row">
+        <div class="col-12 section-header"> <a name="sign-up">Sign Up</a></div>
+            <div class="col-12 log-form">
+                <form name="sign-up-form" onSubmit="" method="post">
+                    <br><input type="first-name" id="first-name" placeholder="First Name" required>
+                        <input type="last-name" id="last-name" placeholder="Last Name" required></br>
+                    <br><input type="email" id="email" placeholder="Email" required></br>
+                    <br><input type="password" id="password" placeholder="Password" onclick="validatePassword()" required></br>
+                    <br><input type="password" id="confirm-password" placeholder="Re-Password" onclick="validatePassword()" required></br>
+                    <br><input type="submit" value="Login" ></br>
+                    <br><input type="checkbox" onclick="showPassword()">Show Password</br>
+                    <br><input type="reset">Reset</br>
+                    
+                </form>
+    </div>
+        </div>
     </div>
     <div class="row">
         <div class="col-12 footer">

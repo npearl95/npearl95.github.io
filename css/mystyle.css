@@ -85,7 +85,7 @@ i:hover {
 }
 /*---------------------------------------------*/
 /*log-in form*/
-.log-in  {
+.log-form  {
    margin: 0 auto; 
    text-align: center;
    background-size: 100%;
@@ -104,24 +104,16 @@ input[type="submit"] {
 button:hover{
     background-color: rgb(39, 49, 59);
 }
-input[type=email]{
+input{
     border: 1px solid black;
     border-radius: 12px;
     font: 14px bold;
     padding: 10px 20px;
     text-align: center;
     margin: 0 auto;
-    width: 150px;
+    width: 150px;   
 }
-input[type=password]{
-    border: 1px solid black;
-    border-radius: 12px;
-    font: 14px bold;
-    padding: 10px 20px;
-    text-align: center;
-    margin: 0 auto;
-    width: 150px;
-}
+
 input[type=text],select {
     background-color: rgb(226, 226, 226);
     font: 14px bold;
