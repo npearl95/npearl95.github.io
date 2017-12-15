@@ -96,10 +96,19 @@ input[type="submit"] {
     font-family: "courier" ;
     font: bold 20px;
     color: rgb(255, 255, 255);
-    padding: 10px 20px;
+ 
     width: 150px;
     height: auto;
-    border-radius: 12px;
+}
+input[type="reset"] {
+    background-color: #15ad15;
+    font-family: "courier" ;
+    font: bold 20px;
+    color: rgb(255, 255, 255);
+
+    width: 150px;
+    height: auto;
+
 }
 button:hover{
     background-color: rgb(39, 49, 59);
@@ -111,7 +120,7 @@ input{
     padding: 10px 20px;
     text-align: center;
     margin: 0 auto;
-    width: 150px;   
+    width: auto;   
 }
 
 input[type=text],select {
@@ -136,7 +145,6 @@ input[type=text],select {
     padding: 5px 5px;
     font-size: 12px;
 }
-
 /* Add a green text color and a checkmark when the requirements are right */
 .valid {
     color: green;

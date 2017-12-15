@@ -30,8 +30,8 @@
                         <form name="logInForm" onSubmit="return validatePassword()" method="post">
                             <br><input type="email" id="email" placeholder="Email" required></br>
                             <br><input type="password" id="password" placeholder="Password" onclick="validatePassword()" required></br>
-                            <br><input type="submit" value="Login" ></br>
                             <br><input type="checkbox" onclick="showPassword()">Show Password</br>
+                            <br><input type="submit" value="Login" ></br>
                         </form>
                         <div id="message">
                             <h4>Password must contains:</h2>
@@ -139,15 +139,20 @@
         <div class="col-12 section-header"> <a name="sign-up">Sign Up</a></div>
             <div class="col-12 log-form">
                 <form name="sign-up-form" onSubmit="" method="post">
-                    <br><input type="first-name" id="first-name" placeholder="First Name" required>
-                        <input type="last-name" id="last-name" placeholder="Last Name" required></br>
+                    <br><input type="text" id="first-name" placeholder="First Name" required>
+                        <input type="text" id="last-name" placeholder="Last Name" required></br>
+                    <br><input type="date" id="birthday" placeholder="Birthday" required></br>
+                    <br><input type="tel" id="phone-number" placeholder="Phone Number" required></br>
                     <br><input type="email" id="email" placeholder="Email" required></br>
                     <br><input type="password" id="password" placeholder="Password" onclick="validatePassword()" required></br>
-                    <br><input type="password" id="confirm-password" placeholder="Re-Password" onclick="validatePassword()" required></br>
-                    <br><input type="submit" value="Login" ></br>
+                    <br><input type="password" id="confirm-password" placeholder="Confirm-Password" onclick="validatePassword()" required></br>
+                    <br>
+                        <a id="match" class="invalid">Match</a></br>
+                        </div>
+                    </br>
                     <br><input type="checkbox" onclick="showPassword()">Show Password</br>
-                    <br><input type="reset">Reset</br>
-                    
+                    <br><input type="submit" value="Login" >
+                        <input type="reset"></br>
                 </form>
     </div>
         </div>

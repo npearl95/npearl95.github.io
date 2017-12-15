@@ -82,3 +82,21 @@ function showPassword() {
         x.type = "password";
     }
 }
+
+function passwordMatch(){
+    document.getElementById("message1").style.display = "block";
+    //Onblur: Hide message box
+    input.onblur=function(){
+        document.getElementById("message1").style.display="none";
+    var password=document.getElementById("password");
+    var confirmPassword=document.getElementById("confirm-password");
+    var match=document.getElementById("pswMacth");
+    if(password.value===confirmPassword.value){
+        match.classList.remove("invalid");
+        match.classList.add("valid");
+    } else {
+        match.classList.remove("valid");
+        match.classList.add("invalid");
+    }
+}
+}
