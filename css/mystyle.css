@@ -129,7 +129,6 @@ input[type=text],select {
     padding: 10px 20px;
     text-align: center;
     margin: 0 auto;
-    width: 150px;
     border-radius: 12px;
 }
 /*input[type=text]:focus{
@@ -339,7 +338,7 @@ img:hover{
   /* Modal Content */
   .modal-content {
     position: relative;
-    background-color: #fefefe;
+    background-color: #000000;
     margin: auto;
     padding: 0;
     width: 90%;
