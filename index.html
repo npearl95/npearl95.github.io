@@ -17,28 +17,42 @@
     <script>
             $(document).ready(function(){
                 $("#hideCIS2107").click(function(){
-                    $("#contentCIS2107").hide(100);
+                    $("#contentCIS2107").hide(300);
                 });
                 $("#showCIS2107").click(function(){
-                    $("#contentCIS2107").show(100);
+                    $("#contentCIS2107").show(300);
                 });
             });
             $(document).ready(function(){
                 $("#hideCIS2168").click(function(){
-                    $("#contentCIS2168").hide(100);
+                    $("#contentCIS2168").hide(300);
                 });
                 $("#showCIS2168").click(function(){
-                    $("#contentCIS2168").show(100);
+                    $("#contentCIS2168").show(300);
                 });
             });
-                $(document).ready(function(){
-                    $("#hideCIS3207").click(function(){
-                        $("#contentCIS3207").hide(100);
-                    });
-                    $("#showCIS3207").click(function(){
-                        $("#contentCIS3207").show(100);
-                    });
+            $(document).ready(function(){
+                $("#hideCIS3207").click(function(){
+                    $("#contentCIS3207").hide(300);
                 });
+                $("#showCIS3207").click(function(){
+                    $("#contentCIS3207").show(300);
+                });
+            });
+            /*close all button*/
+            $(document).ready(function(){
+                $("#hideAll").click(function(){
+                    $("#contentCIS2107").hide(300);
+                    $("#contentCIS2168").hide(300);
+                    $("#contentCIS3207").hide(300);
+                });
+                $("#showAll").click(function(){
+                    $("#contentCIS2107").show(300);
+                    $("#contentCIS2168").show(300);
+                    $("#contentCIS3207").show(300);
+                });
+            });
+
         </script>
 </head>
 <!--Start the body-->
@@ -175,8 +189,8 @@
     <div class="row">
         <div class="col-12 section-header">
             <a name="CIS2107">CIS 2107</a>
-            <button id="showCIS2107">Show</button>
-            <button id="hideCIS2107">Hide</button>
+            <button id="showCIS2107" style="background-color: green">✔</button>
+            <button id="hideCIS2107" style="background-color: red">✖</button>
         </div>
         <div class="col-12">
             <div class="col-9">
@@ -200,8 +214,8 @@
         
         <div class="col-12 section-header">
             <a name="CIS2168">CIS 2168</a>
-            <button id="showCIS2168">Show</button>
-            <button id="hideCIS2168">Hide</button>
+            <button id="showCIS2168" style="background-color: green">✔</button>
+            <button id="hideCIS2168" style="background-color: red">✖</button>
         </div>
         <div class="col-12">
             <div class="col-9">
@@ -217,9 +231,10 @@
         </div>      
     </div>
     <div class="row">
-            <div class="col-12 section-header">CIS 3207
-                <button id="showCIS3207">Show</button>
-                <button id="hideCIS3207">Hide</button>
+            <div class="col-12 section-header">
+                <a name="CIS3207">CIS 3207</a>
+                <button id="showCIS3207" style="background-color: green">✔</button>
+                <button id="hideCIS3207" style="background-color: red;">✖</button>
             </div>
             <div class="col-12">
                     <div class="col-9">
@@ -233,6 +248,13 @@
                         </ul>     
                     </div>
             </div>
+    </div>
+    <div class="row">
+        <div class="col-12 section-header">
+                <a name="#">Test</a>
+                <button id="showAll" style="background-color: green">Show All</button>
+                <button id="hideAll" style="background-color: red">Hide All</button>
+        </div>
     </div>
     <div class="row">
         <div class="col-12 footer">

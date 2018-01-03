@@ -100,6 +100,9 @@ input[type="submit"] {
     width: 150px;
     height: auto;
 }
+input[type="submit"]:hover{
+    background-color: green;
+}
 input[type="reset"] {
     background-color: #b92323;
     font-family: "courier" ;
@@ -449,4 +452,9 @@ img:hover{
         background-color: #15ad15;
         font-family: "courier" ;
         color: rgb(255, 255, 255);
+        opacity: 0.8; 
     }
+    button:hover{
+        opacity: 1;
+    }
+    
