@@ -147,29 +147,56 @@
         </div>
     </div-->
     <div class="row">
-        <div class="col-12 section-header"> <a name="CIS2107">CIS 2107</a></div>
-    </div>
-    <div class="row">
+        <script>
+            $(document).ready(function(){
+                $("#hideCIS2107").click(function(){
+                    $("#contentCIS2107").hide(100);
+                });
+                $("#showCIS2107").click(function(){
+                    $("#contentCIS2107").show(100);
+                });
+            });
+        </script>
+        <div class="col-12 section-header">
+            <a name="CIS2107">CIS 2107</a>
+            <button id="showCIS2107">Show</button>
+            <button id="hideCIS2107">Hide</button>
+        </div>
+        <div class="col-12" id="contentCIS2107">
             <div class="col-9">
-                <div class="col-9">
-                    <h2>Computer Systems and Low-Level Programming</h1>
-                    <p>Prof: Joe Jupin</p>
-                </div>
+                <h2>Computer Systems and Low-Level Programming</h1>
+                <p>Prof: Joe Jupin</p>
             </div>
             <div class="col-3 box">
-                    <ul>
-                        <li ><a href="documents/cis2107/CIS2107-syllabus.pdf">Syllabus</li>
-                        <li ><a href="documents/cis2107/lab1.pdf">Lab 1</a></li>
-                        <li ><a href="documents/cis2107/lab2.pdf">Lab 2</a></li>
-                        <li ><a href="documents/cis2107/lab3.pdf">Lab 3</a></li>
-                        <li ><a href="documents/cis2107/lab4.pdf">Lab 4</a></li>
-                        <li ><a href="documents/cis2107/lab5.pdf">Lab 5</a></li>
-                        <li ><a href="documents/cis2107/lab6.pdf">Lab 6</a></li>
-                    </ul>     
-                </div>
+                <ul>
+                    <li ><a href="documents/cis2107/CIS2107-syllabus.pdf">Syllabus</li>
+                    <li ><a href="documents/cis2107/lab1.pdf">Lab 1</a></li>
+                    <li ><a href="documents/cis2107/lab2.pdf">Lab 2</a></li>
+                    <li ><a href="documents/cis2107/lab3.pdf">Lab 3</a></li>
+                    <li ><a href="documents/cis2107/lab4.pdf">Lab 4</a></li>
+                    <li ><a href="documents/cis2107/lab5.pdf">Lab 5</a></li>
+                    <li ><a href="documents/cis2107/lab6.pdf">Lab 6</a></li>
+                </ul>     
+            </div>
+        </div>
     </div>
     <div class="row">
-        <div class="col-12 section-header"> <a name="CIS2168">CIS 2168</a></div>
+        <script>
+            $(document).ready(function(){
+                $("#hideCIS2168").click(function(){
+                    $("#contentCIS2168").hide(100);
+                });
+                $("#showCIS2168").click(function(){
+                    $("#contentCIS2168").show(100);
+                });
+            });
+        </script>
+        <div class="col-12 section-header">
+            <a name="CIS2168">CIS 2168</a>
+            <button id="showCIS2168">Show</button>
+            <button id="hideCIS2168">Hide</button>
+        </div>
+        <div class="col-12" id="contentCIS2168">
             <div class="col-9">
                 <div class="col-9">
                     <h2>Data Structure and Programming Language</h1>
@@ -181,9 +208,10 @@
                         <li ><a href="documents/cis2168/CIS2168-syllabus.pdf">Syllabus</li>
                         <li ><a href="documents/cis2168/Lab1.pdf">Lab 1</a></li>
                     </ul>     
-            </div>      
+            </div>
+        </div>      
     </div>
-    <div class="row">
+    <!--div class="row">
         <div class="col-12">
             <script>
                 $(document).ready(function(){
@@ -208,30 +236,35 @@
                 <div class="col-12" id="flip">Test</div>
                 <div class="col-12" id="panel">It works</div>
         </div>
-    </div>
-    <!--Sign up form
+    </div-->
     <div class="row">
-        <div class="col-12 section-header"> <a name="sign-up">Sign Up</a></div>
-        <div class="col-12 log-form">
-            <form name="sign-up-form" onSubmit="" method="post">
-                <br><input type="text" id="first-name" placeholder="First Name" required>
-                    <input type="text" id="last-name" placeholder="Last Name" required></br>
-                <br><input type="date" id="birthday" placeholder="Birthday" required></br>
-                <br><input type="tel" id="phone-number" placeholder="Phone Number" required></br>
-                <br><input type="email" id="email" placeholder="Email" required></br>                    
-                <br><input type="password" id="password" placeholder="Password" onclick="validatePassword()" required></br>
-                <br><input type="password" id="confirm-password" placeholder="Confirm-Password" onclick="validatePassword()" required></br>
-                <br>
-                    <a id="match" class="invalid">Match</a></br>
-                </br>
-                <br><input type="checkbox" onclick="showPassword()">Show Password</br>
-                <br><input type="submit" value="Login" >
-                <input type="reset">
-                </br>
-            </form>
-        </div>
+            <script>
+                $(document).ready(function(){
+                    $("#hideCIS3207").click(function(){
+                        $("#contentCIS3207").hide(100);
+                    });
+                    $("#showCIS3207").click(function(){
+                        $("#contentCIS3207").show(100);
+                    });
+                });
+            </script>
+            <div class="col-12 section-header">CIS 3207
+                <button id="showCIS3207">Show</button>
+                <button id="hideCIS3207">Hide</button>
+            </div>
+            <div class="col-12" id="contentCIS3207">
+                    <div class="col-9">
+                        <h2>Data Structure and Programming Language</h1>
+                        <p>Prof: Xiuqi(Cindy) Li</p>
+                    </div>
+                    <div class="col-3 box"> 
+                        <ul>
+                            <li ><a href="documents/cis2168/CIS2168-syllabus.pdf">Syllabus</li>
+                            <li ><a href="documents/cis2168/Lab1.pdf">Lab 1</a></li>
+                        </ul>     
+                    </div>
+            </div>
     </div>
-    -->
     <div class="row">
         <div class="col-12 footer">
             <a href="https://github.com/npearl95"><i class="fa fa-github" style="font-size:24px"></i></a>
