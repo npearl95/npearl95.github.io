@@ -437,3 +437,16 @@ img:hover{
     #contentCIS2168 {
         display: none;
     }
+    button {
+        border: 1px solid black;
+        border-radius: 12px;
+        font: 14px bold;
+        padding: 10px 20px;
+        text-align: center;
+        margin: 0 auto;
+        width: auto;
+        height: auto;   
+        background-color: #15ad15;
+        font-family: "courier" ;
+        color: rgb(255, 255, 255);
+    }

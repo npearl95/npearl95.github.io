@@ -14,6 +14,32 @@
     <!--This library implement to use as -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--done js-->
+    <script>
+            $(document).ready(function(){
+                $("#hideCIS2107").click(function(){
+                    $("#contentCIS2107").hide(100);
+                });
+                $("#showCIS2107").click(function(){
+                    $("#contentCIS2107").show(100);
+                });
+            });
+            $(document).ready(function(){
+                $("#hideCIS2168").click(function(){
+                    $("#contentCIS2168").hide(100);
+                });
+                $("#showCIS2168").click(function(){
+                    $("#contentCIS2168").show(100);
+                });
+            });
+                $(document).ready(function(){
+                    $("#hideCIS3207").click(function(){
+                        $("#contentCIS3207").hide(100);
+                    });
+                    $("#showCIS3207").click(function(){
+                        $("#contentCIS3207").show(100);
+                    });
+                });
+        </script>
 </head>
 <!--Start the body-->
 <body>
@@ -147,27 +173,17 @@
         </div>
     </div-->
     <div class="row">
-        <script>
-            $(document).ready(function(){
-                $("#hideCIS2107").click(function(){
-                    $("#contentCIS2107").hide(100);
-                });
-                $("#showCIS2107").click(function(){
-                    $("#contentCIS2107").show(100);
-                });
-            });
-        </script>
         <div class="col-12 section-header">
             <a name="CIS2107">CIS 2107</a>
             <button id="showCIS2107">Show</button>
             <button id="hideCIS2107">Hide</button>
         </div>
-        <div class="col-12" id="contentCIS2107">
+        <div class="col-12">
             <div class="col-9">
                 <h2>Computer Systems and Low-Level Programming</h1>
                 <p>Prof: Joe Jupin</p>
             </div>
-            <div class="col-3 box">
+            <div class="col-3 box" id="contentCIS2107">
                 <ul>
                     <li ><a href="documents/cis2107/CIS2107-syllabus.pdf">Syllabus</li>
                     <li ><a href="documents/cis2107/lab1.pdf">Lab 1</a></li>
@@ -181,29 +197,18 @@
         </div>
     </div>
     <div class="row">
-        <script>
-            $(document).ready(function(){
-                $("#hideCIS2168").click(function(){
-                    $("#contentCIS2168").hide(100);
-                });
-                $("#showCIS2168").click(function(){
-                    $("#contentCIS2168").show(100);
-                });
-            });
-        </script>
+        
         <div class="col-12 section-header">
             <a name="CIS2168">CIS 2168</a>
             <button id="showCIS2168">Show</button>
             <button id="hideCIS2168">Hide</button>
         </div>
-        <div class="col-12" id="contentCIS2168">
+        <div class="col-12">
             <div class="col-9">
-                <div class="col-9">
-                    <h2>Data Structure and Programming Language</h1>
-                    <p>Prof: Xiuqi(Cindy) Li</p>
-                </div>
+                <h2>Data Structure and Programming Language</h1>
+                <p>Prof: Xiuqi(Cindy) Li</p>
             </div>
-            <div class="col-3 box">
+            <div class="col-3 box" id="contentCIS2168">
                     <ul>
                         <li ><a href="documents/cis2168/CIS2168-syllabus.pdf">Syllabus</li>
                         <li ><a href="documents/cis2168/Lab1.pdf">Lab 1</a></li>
@@ -211,53 +216,17 @@
             </div>
         </div>      
     </div>
-    <!--div class="row">
-        <div class="col-12">
-            <script>
-                $(document).ready(function(){
-                    $("#flip").click(function(){
-                        $("#panel").slideDown("slow");
-                    });
-                });
-            </script>
-            <style> 
-                #panel, #flip {
-                    padding: 5px;
-                    text-align: center;
-                    background-color: #ebbfc8;
-                    border: solid 1px #ff0000;
-                }
-                
-                #panel {
-                    padding: 50px;
-                    display: none;
-                }
-            </style>
-                <div class="col-12" id="flip">Test</div>
-                <div class="col-12" id="panel">It works</div>
-        </div>
-    </div-->
     <div class="row">
-            <script>
-                $(document).ready(function(){
-                    $("#hideCIS3207").click(function(){
-                        $("#contentCIS3207").hide(100);
-                    });
-                    $("#showCIS3207").click(function(){
-                        $("#contentCIS3207").show(100);
-                    });
-                });
-            </script>
             <div class="col-12 section-header">CIS 3207
                 <button id="showCIS3207">Show</button>
                 <button id="hideCIS3207">Hide</button>
             </div>
-            <div class="col-12" id="contentCIS3207">
+            <div class="col-12">
                     <div class="col-9">
-                        <h2>Data Structure and Programming Language</h1>
-                        <p>Prof: Xiuqi(Cindy) Li</p>
+                        <h2>Introduction to Systems Programming and Operating Systems</h1>
+                        <p>Prof: John Fiore</p>
                     </div>
-                    <div class="col-3 box"> 
+                    <div class="col-3 box" id="contentCIS3207"> 
                         <ul>
                             <li ><a href="documents/cis2168/CIS2168-syllabus.pdf">Syllabus</li>
                             <li ><a href="documents/cis2168/Lab1.pdf">Lab 1</a></li>
