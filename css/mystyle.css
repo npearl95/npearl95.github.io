@@ -1,6 +1,15 @@
+
+/*Navy: #1D2731*/
+:root {
+    --main:#1D2731;
+    --pink: #D5B8CB;
+    --darkpink: #6A5C62;
+}
 html{
     font-family: "Courier New", Courier, monospace;
+    /*font-family: "Palatino", Palatino, monospace;*/
     font: bold;
+    color: var(--pink);
     text-align: center;
 }
 /*box-sizing: include all the padding and border
@@ -16,13 +25,23 @@ to prevent other item goes on top of the column*/
     clear: both;
     display: table;
 }
+body, html {
+     height: 100%;
+}
+.bg{
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .body{
     position: relative;
 }
 
 .footer{
-    background-color: #1D2731;
+    /*navy blue: background-color: #1D2731;*/
+    background-color:var(--main);
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     color: rgb(221, 220, 215);
 }
@@ -61,11 +80,10 @@ width: 100%;
 }
 /*End 12 collumn*/
 
-
-
 /*This section deal with header, icon and make the icon light up when user hover*/
 .header{
-    background-color: #1D2731;
+    /*Blue  #1D2731*/
+    background-color: var(--main);
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     color:white;
     font: 20px;
@@ -82,6 +100,18 @@ i {
   
 i:hover { 
     opacity: 1; 
+}
+@media screen and (min-width:1200px) {
+    body { font-size:110%; } /* Increase the font size */
+}
+@media screen and (min-width:1400px) {
+    html { padding:0 15%; } /* Reduce the container width */
+}
+@media screen and (min-width:1600px) {
+    body { font-size:125%; } /* Increase the font size */
+}
+@media screen and (min-width:1800px) {
+    html { padding:0 20%; } /* Reduce the container width */
 }
 /*---------------------------------------------*/
 /*log-in form*/
@@ -166,48 +196,10 @@ input[type=text],select {
     content: "✖";
 }
 
-/*
-.menu {
-    position: relative;
-    display: inline-block;
-    background-color: white;
-    color: #1D2731; 
-}
-.menu-content {
-    display: none;hide the <a> content until user hover 
-    position: absolute;this will prevent the content behind move down for the content to appera 
-    background-color: #1D2731;
-    left:0;
-    width: 100%;
-    padding: 10px;
-}
-*/
-/*
-    .menu-content a {
-        color: white;/*prevent href link to be blue
-        text-decoration: none;/*prevent href link to be underline
-        display: block; /*Displays an element as a block element (like <p>)
-        padding: 10px;
-    }
-
-        .menu-content a:hover{
-            background-color: rgb(52, 59, 66);
-            color:rgb(255, 255, 255);
-            -webkit-transform: rotate(5deg);
-            -moz-transform: rotate(5deg);
-              -o-transform: rotate(5deg);
-             -ms-transform: rotate(5deg);
-             transform: rotate(5deg);
-        }
-
-.menu:hover .menu-content {
-    display: block;/*when mouse is hover: the item show
-}
-*/
 /*when it's full Screen------------------------*/
 @media only screen and (min-width: 760px) {
     .header{
-        background-color: #1D2731;
+        background-color: var(--main);;
         box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
         color:white;
         min-height: 30px;
@@ -219,7 +211,7 @@ input[type=text],select {
     padding: 10px 0px 10px 0px;
     min-width: 100%;
     margin: 15px 0px 15px 0px;
-    background-color:  #1D2731;
+    background-color:  #D3B6C9;
     color: #ffffff;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
@@ -231,11 +223,11 @@ input[type=text],select {
 .navigation li:hover {
     background-color: rgb(52, 59, 66);
     color:rgb(255, 255, 255);
-    -webkit-transform: rotate(5deg);
-    -moz-transform: rotate(5deg);
-      -o-transform: rotate(5deg);
-     -ms-transform: rotate(5deg);
-     transform: rotate(5deg);
+    -webkit-transform: rotate(1deg);
+    -moz-transform: rotate(1deg);
+      -o-transform: rotate(1deg);
+     -ms-transform: rotate(1deg);
+     transform: rotate(1deg);
 }
 /*down load file*/
 .box li {
@@ -284,9 +276,9 @@ input[type=text],select {
 }*/
 
 .profile-pic {
-    height: 100px;
-    width: 100px;
-    border-radius: 100%;
+    height: 130px;
+    width: 130px;
+    border-radius: 30%;
 }
 img{
     height: auto;
@@ -299,9 +291,9 @@ img:hover{
     opacity: 0.5; 
 }
 .section-header{
-    background-color: #1D2731;
+    background-color: var(--pink);
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    color: rgb(221, 220, 215);
+    color: white;
 }
 .page-heading {
     height: 100%;
@@ -427,9 +419,9 @@ img:hover{
     transition: 0.3s
   }
   
-  .hover-shadow:hover {
+.hover-shadow:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
-  }
+}
   /*Start the Jquery CSS*/
     #contentCIS3207 {
         display: none;
@@ -441,7 +433,6 @@ img:hover{
         display: none;
     }
     button {
-        border: 1px solid black;
         border-radius: 12px;
         font: 14px bold;
         padding: 10px 20px;
